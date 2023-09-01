@@ -1,6 +1,7 @@
 package jp.co.careritztc.day2.exercise2;
 
 import jp.co.careritztc.day2.exercise2.data.ExampleTypeMap;
+import jp.co.careritztc.day2.exercise2.pojo.Staff.Gender;
 
 /**
  * Javaの基礎５日間コース ２日目.
@@ -25,7 +26,9 @@ public class Exercise21Main {
     // 北村記載箇所開始
 
     ExampleTypeMap.getSampleData().entrySet().forEach(entry -> {
-      System.out.println("氏名:[%s] 給与：[%d]円".formatted(entry.getKey() , entry.getValue().getSalary()));
+      if(entry.getValue().getGender() == Gender.FEMALE){
+        System.out.println("氏名:[%s] 給与：[%d]円".formatted(entry.getKey() , entry.getValue().getSalary()));
+      }
     });
 
     // 北村記載箇所終了
