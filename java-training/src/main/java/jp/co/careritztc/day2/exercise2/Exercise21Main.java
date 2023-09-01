@@ -11,7 +11,7 @@ import jp.co.careritztc.day2.exercise2.pojo.Staff.Gender;
  * </pre>
  */
 public class Exercise21Main {
-
+  
   /**
    * main method.
    *
@@ -26,9 +26,7 @@ public class Exercise21Main {
     // 北村記載箇所開始
 
     ExampleTypeMap.getSampleData().entrySet().forEach(entry -> {
-      if(entry.getValue().getGender() == Gender.MALE){
         System.out.println("氏名:[%s] 給与：[%d]円".formatted(entry.getKey() , entry.getValue().getSalary()));
-      }
     });
 
     // 北村記載箇所終了
