@@ -21,5 +21,14 @@ public class Exercise11Main {
     // System.out.println("i=%d result=".formatted(i) + result);
 
     // 変数resultの型はプリミティブ型のdoubleとして実装して下さい。
+
+    // 北村記載箇所開始
+    double result = 0.0;
+
+    for(int i = 0;i<10;i++){
+      result += 0.1;
+      System.out.println("i=%d result=".formatted(i) + result);
+    }
+    // 北村記載箇所終了
   }
 }
