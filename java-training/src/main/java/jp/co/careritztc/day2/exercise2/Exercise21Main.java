@@ -26,7 +26,7 @@ public class Exercise21Main {
     // 北村記載箇所開始
 
     ExampleTypeMap.getSampleData().entrySet().forEach(entry -> {
-      if(entry.getValue().getGender() == Gender.FEMALE){
+      if(entry.getValue().getGender() == Gender.MALE){
         System.out.println("氏名:[%s] 給与：[%d]円".formatted(entry.getKey() , entry.getValue().getSalary()));
       }
     });
