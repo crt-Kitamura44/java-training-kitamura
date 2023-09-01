@@ -2,7 +2,7 @@ package jp.co.careritztc.day2.exercise2.data;
 
 import java.time.LocalDate;
 import java.util.Collections;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import jp.co.careritztc.day2.exercise2.pojo.Staff;
 import jp.co.careritztc.day2.exercise2.pojo.Staff.Gender;
@@ -11,7 +11,7 @@ public class ExampleTypeMap {
 
   private static final Map<String, Staff> staffs;
   static {
-    Map<String, Staff> map = new HashMap<>();
+    Map<String, Staff> map = new LinkedHashMap<>();
     map.put("Sato Taro", new Staff("Taro", "Sato", Gender.MALE, 50000, LocalDate.of(1995, 2, 14)));
     map.put("Ito Hana", new Staff("Hana", "Ito", Gender.FEMALE, 60000, LocalDate.of(1990, 3, 3)));
     map.put("Suzuki Ken", new Staff("Ken", "Suzuki", Gender.MALE, 55000, LocalDate.of(1995, 2, 14)));
