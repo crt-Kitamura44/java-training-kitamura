@@ -1,6 +1,15 @@
 package jp.co.careritztc.day3.exercise1;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.chrono.JapaneseChronology;
+import java.time.format.DateTimeFormatter;
+import java.util.Comparator;
+import java.util.Locale;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.function.Function;
+
 import jp.co.careritztc.day3.exercise1.data.ExampleTypeMap;
 import jp.co.careritztc.day3.exercise1.pojo.Staff;
 
@@ -23,5 +32,14 @@ public class Exercise14Main {
     Map<String, Staff> data = ExampleTypeMap.getSampleData();
 
     // TODO 全員の誕生日を年を除いたMM月dd日形式で遅い順に重複を排除した形で標準出力へ表示して下さい。
+    DateTimeFormatter formatter = DateTimeFormatter
+			.ofPattern("MM月dd日");
+
+    data.entrySet().stream()
+    .map(entry -> entry.getValue().getBirthday().format(formatter))
+    .sorted(Comparator.reverseOrder())
+    .distinct()
+    .forEach(entry -> System.out.println(entry));
+
   }
 }
