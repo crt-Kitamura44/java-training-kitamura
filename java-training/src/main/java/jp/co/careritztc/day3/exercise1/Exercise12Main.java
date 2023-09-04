@@ -1,7 +1,5 @@
 package jp.co.careritztc.day3.exercise1;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.time.chrono.JapaneseChronology;
 import java.time.format.DateTimeFormatter;
 import java.util.Comparator;

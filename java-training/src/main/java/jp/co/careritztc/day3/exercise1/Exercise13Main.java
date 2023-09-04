@@ -4,15 +4,11 @@ import java.time.chrono.JapaneseChronology;
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
 import java.util.Comparator;
-import java.util.Date;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.function.Function;
-import java.util.Calendar;
 
 import jp.co.careritztc.day3.exercise1.data.ExampleTypeMap;
 import jp.co.careritztc.day3.exercise1.pojo.Staff;

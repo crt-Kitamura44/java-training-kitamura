@@ -1,15 +1,8 @@
 package jp.co.careritztc.day3.exercise1;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.chrono.JapaneseChronology;
 import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
-import java.util.Locale;
 import java.util.Map;
-import java.util.Map.Entry;
-import java.util.function.Function;
-
 import jp.co.careritztc.day3.exercise1.data.ExampleTypeMap;
 import jp.co.careritztc.day3.exercise1.pojo.Staff;
 
