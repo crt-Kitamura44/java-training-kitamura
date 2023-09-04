@@ -1,5 +1,7 @@
 package jp.co.careritztc.day3.exercise1.pojo;
 
+import java.time.LocalDate;
+
 /**
  * Staffクラス.
  */
@@ -22,6 +24,8 @@ public class Staff {
   private Gender gender;
   /** 給与. */
   private Integer salary;
+  /** 誕生日 */
+  private LocalDate birthday;
 
   /**
    * コンストラクタ.
@@ -30,12 +34,14 @@ public class Staff {
    * @param lastName  氏
    * @param gender    性別
    * @param salary    給与
+   * @param birthday  誕生日
    */
-  public Staff(String firstName, String lastName, Gender gender, Integer salary) {
+  public Staff(String firstName, String lastName, Gender gender, Integer salary, LocalDate birthday) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.gender = gender;
     this.salary = salary;
+    this.birthday = birthday;
   }
 
   public String getFirstName() {
@@ -52,5 +58,9 @@ public class Staff {
 
   public Integer getSalary() {
     return salary;
+  }
+
+  public LocalDate getBirthday(){
+    return birthday;
   }
 }
